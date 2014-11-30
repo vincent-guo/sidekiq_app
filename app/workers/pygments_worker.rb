@@ -1,5 +1,6 @@
 class PygmentsWorker
   include Sidekiq::Worker
+  sidekiq_options retry: false
 
   def perform(snippet_id)
     snippet = Snippet.find(snippet_id)
