@@ -12,6 +12,9 @@ gem 'rails-html-sanitizer', '1.0.1'
 gem 'sdoc',                 '0.4.1', group: :doc
 gem 'sidekiq',              '3.3.0'
 
+gem 'sinatra', require: false
+gem 'slim'
+
 group :development, :test do
   gem 'byebug',      '3.5.1'
   gem 'web-console', '1.0.4'
